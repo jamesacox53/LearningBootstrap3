@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- We have examined containers and we have examined rows. The next element to
+     examine in our grid setup is looking at the columns. The columns enable us to
+     have a grid structure because they enable us to have different sized columns
+     across our screen.
+     
+     For the column class it starts with col- and then we have to state the size
+     of the column. We'll look at these in more detail in a later tutorial. Here
+     lets go with large (lg). Once it's in place we need to say how many columns
+     this intends to span. The column setup inside bootstrap is 12 columns. That's
+     the total amount of columns that we have to add our columns up to. If we go
+     with 6 it will take half the amount of columns. If we have 2 columns that had
+     6 that would span the full 12 columns.
+
+     We can use the columns to build complex layouts.
+     -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="well">Column 1</div>
+        </div>
+        <div class="col-lg-6">
+          <div class="well">Column 2</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="well">Column 3</div>
+        </div>
+        <div class="col-lg-8">
+          <div class="well">Column 4</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="well">Column 5</div>
+        </div>
+        <div class="col-lg-4">
+          <div class="well">Column 6</div>
+        </div>
+        <div class="col-lg-4">
+          <div class="well">Column 7</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
