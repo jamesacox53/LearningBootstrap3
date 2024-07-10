@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- In this tutorial we are going to look at changing the layout depending on the
+     size. It may be that at different sizes we want to re-order our content. Maybe we want
+     to have one of the columns that are displayed before another one at a small screen
+     placed after it in a large screen. Let's take a look at how we would do that. We
+     want to swap the order of Column 1 and Column 2 if we're above a specific point
+     in our browser.
+
+     You have to remember that bootstrap is always designed for the smallest size first and
+     then other sizes afterwards. So this is designed specifically for mobile now even though
+     we are looking at it on a much larger screen. Now we are going to re-order it based on
+     if we are looking at it on a larger screen. We add the class col-md-push-6 to the first
+     column. This class says at the medium breakpoint we are going to push this column over
+     6. Very similar to that in the second one we are going to add the class col-md-pull-6
+     which says to pull it over 6. At the larger screen size Column 2 is now ordered before
+     column 1. At smaller screen sizes Column 1 appears before Column 2.
+
+     Using the push and pull structure we can decide exactly which column gets displayed
+     where based upon it's screen size. This is extremely useful as we go about creating
+     our complex design structure.
+    -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-push-6">
+          <div class="well">Column 1</div>
+        </div>
+        <div class="col-md-6 col-md-pull-6">
+          <div class="well">Column 2</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
