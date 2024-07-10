@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Here we have a different setup than before. We have 4 columns where we have
+     used the class col-xs-6, but now we have also added col-md-3. What we are going
+     to say here is that at the extra small size and the small size it's going to
+     span 6 columns, but when we go up to the medium size breakpoint it's going to
+     be 3. Anything above that it will be 3.
+
+     As we have put col-md-3 in all of them we will end up with 4 columns in larger
+     screens and 2 columns in smaller screens.
+
+     Me: Even though there is only 1 row I think it wraps around if we put columns
+     adding up to above 12 in a row.
+     -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-3">
+          <div class="well">Column 1</div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <div class="well">Column 2</div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <div class="well">Column 3</div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <div class="well">Column 4</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- What may typically happen is that our columns should be different sizes as when
+     we are designing things maybe be different sizes. When we go to the smaller sizes
+     our design can really break up.
+     
+     We can't put column 1 inside a different row as then even at the large size we'll
+     be over 2 particluar rows. Instead we need to add a div with the class "clearfix".
+     However the clearfix will still apply at higher breakpoints so we need to add the
+     classes "hidden-md" and "hidden-lg" which hides the clearfix at the medium breakpoint
+     and the large breakpoint.
+
+     The clearfix allows us to clear the gap.
+
+     Me: put clearfix where things get messed up (below column 2). 
+     -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-3">
+          <div class="well">Column 1 Column 1 Column 1 Column 1 Column 1 Column 1 Column 1</div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <div class="well">Column 2</div>
+        </div>
+        <div class="clearfix hidden-md hidden-lg"></div>
+        <div class="col-xs-6 col-md-3">
+          <div class="well">Column 3</div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <div class="well">Column 4</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

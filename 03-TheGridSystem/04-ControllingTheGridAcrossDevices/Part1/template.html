@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- We're now going to take a look at controlling our grid across multiple
+     devices. In other workds we are going to make our grid responsive. It always
+     was responsive but we didn't examine it in the previous tutorial. For the columns
+     we are going to examine what large (lg) does and then look at some of the other
+     things we can put in it's place.
+
+     We have our 2 large column setup, each of these are spanning 6 columns. If we resize
+     this immediately at the first breakpoint it stops being 2 columns. That's what it's
+     meant by those middle letters that we put in, col-lg. At the large screen as soon as
+     we have gone past the large breakpoint (1200px) (anything greater than the large
+     break point) it becomes 2 columns. But when the screen is smaller than the large
+     breakpoint (less than 1200px) it remains 1 column (Me: it's on a separate row
+     below).
+
+     Now we try with col-md. md stands for medium. When starting at the maximum browser
+     width and reducing when we go past the large breakpoint it stays as 2 columns.
+     But when we get down to the medium breakpoint (992px) it changes to 2 full rows instead
+     of 2 columns. Now the columns span the full width of the container.
+
+     If we add another row with col-sm, sm stands for small. This time if we start from the
+     biggest screen size and get smaller it will stay as 2 columns for above the large
+     breakpoint (1200px). It will stay as 2 columns above the medium breakpoint (992px)
+     and it will stay as 2 columns above the small breakpoint (768px). But it will become
+     2 rows below the small breakpoint (768px), they are all 2 rows at below the small
+     break point.
+
+     There is another column size of xs, extra small. Extra small will always stay as 2
+     columns regardless of how small the screen gets. Extra small never breaks down
+     into rows.
+
+     Me: think of it from the perspective of a small screen getting bigger. Everything
+     will be 2 rows to start with. When we get above the small breakpoint (768px) then
+     the small columns become columns. When we get above the medium breakpoint (992px)
+     the medium columns will become columns. When we get above the large breakpoint (1200px)
+     then the large columns will become columns. All other times the columns will be rows.
+     But extra small always stays as the columns regardless of how small the screen gets.
+     -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="well">Large Column 1</div>
+        </div>
+        <div class="col-lg-6">
+          <div class="well">Large Column 2</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="well">Medium Column 1</div>
+        </div>
+        <div class="col-md-6">
+          <div class="well">Medium Column 2</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="well">Small Column 1</div>
+        </div>
+        <div class="col-sm-6">
+          <div class="well">Small Column 2</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="well">Extra Small Column 1</div>
+        </div>
+        <div class="col-xs-6">
+          <div class="well">Extra Small Column 2</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
