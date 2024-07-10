@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Here we're going to explore making things hidden and visible at different
+     sizes. We add the extra class "hidden-xs" to the image. This means hidden at the
+     extra small size. If we change it to "hidden-sm" then it's visible at the exta
+     small size but it's not visible at the small size. It comes back for the medium
+     and the large. It's hidden for that specific size and that specific size alone.
+     If we want it hidden on extra small and small then we have to add both of the
+     classes "hidden-xs" and "hidden-sm".
+
+     We could also use the opposite which is "visible-sm". Where the element is
+     only visible at that size. All other times it's invisible. visible only works
+     for that particular size.
+     
+     It's worth pointing out that it doesn't mean that this image doesn't download
+     on say a mobile that was extra small. Just because it's not there doesn't mean
+     it hasn't downloaded. Because it's in our code it will download. So be careful
+     if you are creating lots of big images, just because they aren't shown on the
+     screen doesn't mean that your small mobile browser might not have them in
+     memory because it will have them in memory. If your page become unresponsive
+     or becomes slow that might be a reason why. You might have created lots of
+     images for desktop that you are just hiding in a smaller browser. In that
+     case you are still loading them, you are still using the same amount of
+     bandwith and you're still holding it in memory. All that you're not doing
+     is displaying it on the screen.
+     -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+            <img src="images/client-logo1.png" class="img-responsive hidden-sm" />
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well">
+            <img src="images/client-logo1.png" class="img-responsive visible-sm" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
