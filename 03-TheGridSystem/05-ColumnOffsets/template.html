@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Lets say that we wanted to create a more complicated layout where we want 2
+     columns but with a gap inbetween. Here we would need to have 2 columns that span
+     4 of Bootstraps columns and then a gap. We need to learn how to offset the second
+     column. To offset a column we need to add the class col-md-offset-4. This means
+     that at the medium and above breakpoint the column is offset by 4. This still
+     adds up to 12 so it should still fill our columns. But we don't have to make
+     the offset add up to 12, if we leave some out then it just leaves some space at
+     the end.
+    -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="well">Column 1</div>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <div class="well">Column 2</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
