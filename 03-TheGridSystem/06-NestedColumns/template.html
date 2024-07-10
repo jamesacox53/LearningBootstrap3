@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      .col-md-9 {
+        background-color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- In this tutorial we are going to take a look at nesting columns. That means
+     we are going to create a column in our page and in that column we are going to add
+     several other columns. Therefore the columns we add to the first column are going to
+     be nested inside. To add columns inside another column we need to first create a row
+     in that column.
+
+     Our nested column is 6 divisions wide and sits in a column that's 9 wide so you might
+     think we have to have another column that's 3 divisions wide but we don't. When we
+     nest columns they must add up to 12. Anytime we put columns inside of other columns
+     they must always add up to 12 because that is the grid. It's based on percentages
+     rather than anything else.
+     -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          Column 1
+          <div class="row">
+            <div class="col-md-6">
+              <div class="well">Nested Column 1</div>
+            </div>
+            <div class="col-md-6">
+              <div class="well">Nested Column 2</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          Column 2
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
