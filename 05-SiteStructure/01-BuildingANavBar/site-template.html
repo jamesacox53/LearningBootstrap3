@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <!-- Whenever you see the word data, data-target, data-toggle. data is an element of
+         HTML 5 that enables you to have specific functionality. Javascript is going to look
+         for data-toggle, it's also going to look for data-target. So it knows that this is going
+         to be the collapse element. This is the element that is going to be on screen on a small
+         screen device only.
+
+         The navbar-collapse is the actual class that's going to make it scroll out from underneath
+         where it is. That's what we're kind of adding at this stage. It's nothing too much to
+         worry about apart from the fact that it makes the navigation work on a small mobile
+         device.
+        -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <!-- Only available to people who are using a screen reader. -->
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">MoveMe</a>
+      </div>
+      <!-- Now we are going to build the navigation part of the site and this is going to be
+       the element that actually collapses when we go down to a small size. So it'll become hidden
+       on those smaller screens but will be visible on the larger screens.
+       -->
+       <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+       </div>
+    </nav>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
